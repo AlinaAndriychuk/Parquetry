@@ -9,77 +9,54 @@
   <link rel="stylesheet" href="css/swiper.min.css">
   </head>
 <body>
-  <header class="header">
+  <header class="header" id="home">
 	<div class="container">
 	  <div class="header__content">
+		<img class="header__burger-menu" alt="" src="img/menu.png">
 		<img class="header__logo" src="img/logo.png" alt="Logo">
 		<nav class="header__navigation">
 		  <menu class="header__menu">
 			<li class="header__item">
-			  <a class="header__link-item" href="#">home</a>
+			  <a class="header__link-item" href="#home">home</a>
 			</li>
 			<li class="header__item">
-			  <a class="header__link-item" href="#">offers</a>
+			  <a class="header__link-item" href="#offers">offers</a>
 			</li>
 			<li class="header__item">
-			  <a class="header__link-item" href="#">trends</a>
+			  <a class="header__link-item" href="#trends">trends</a>
 			</li>
 			<li class="header__item">
-			  <a class="header__link-item" href="#">our team</a>
+			  <a class="header__link-item" href="#team">our team</a>
 			</li>
 			<li class="header__item">
-			  <a class="header__link-item" href="#">contacts</a>
+			  <a class="header__link-item" href="#contacts">contacts</a>
 			</li>
 		  </menu>
-	    </nav>
-		<!-- <nav class="burger-menu">
-					<menu>
-						<li>
-							<a href="#">Home</a>
-						</li>
-						<li>
-							<a href="#">offers</a>
-						</li>
-						<li>
-							<a href="#">trends</a>
-						</li>
-						<li>
-							<a href="#">our team</a>
-						</li>
-						<li>
-							<a href="#">contacts</a>
-						</li>
-					</menu>
-				</nav>
-				<a class="menu__button" href="#">
-					<span class="line"></span>
-					<span class="line"></span>
-					<span class="line"></span>
-				</a>
-			</div>
-		</div> -->
-	</header>
-	<section class="first">
-		<div class="swiper-container">
-		    <div class="swiper-wrapper">
-		        <img class="swiper-slide" src="img/header1.jpg" alt="">
-		        <img class="swiper-slide" src="img/header2.jpg" alt="">
-		        <img class="swiper-slide" src="img/header3.jpg" alt="">
-		        <img class="swiper-slide" src="img/header4.jpg" alt="">
-		        <img class="swiper-slide" src="img/header5.jpg" alt="">
-		        <img class="swiper-slide" src="img/header6.jpg" alt="">
-		        <img class="swiper-slide" src="img/header7.jpg" alt="">
-			</div>
-		    <div class="swiper-button-next"></div>
-		    <div class="swiper-button-prev"></div>
-   			<div class="swiper-pagination"></div>
-  		</div>
-	</section>
+		</nav>
+	  </div>
+    </div>
+  </header>
+  <section class="first">
+	<div class="swiper-container">
+	  <div class="swiper-wrapper">
+		<img class="swiper-slide" src="img/header1.jpg" alt="">
+		<img class="swiper-slide" src="img/header2.jpg" alt="">
+		<img class="swiper-slide" src="img/header3.jpg" alt="">
+		<img class="swiper-slide" src="img/header4.jpg" alt="">
+		<img class="swiper-slide" src="img/header5.jpg" alt="">
+		<img class="swiper-slide" src="img/header6.jpg" alt="">
+		<img class="swiper-slide" src="img/header7.jpg" alt="">
+	  </div>
+	  <div class="swiper-button-next"></div>
+	  <div class="swiper-button-prev"></div>
+   	  <div class="swiper-pagination"></div>
+  	</div>
+  </section>
 	<section class="second">
 		<div class="container">
 			<div class="container__title">
 				<hr>
-				<h3>what we offer</h3>
+				<h3 id="offers">what we offer</h3>
 			</div>
 			<div class="flex-container">
 				<img src="img/new.png" alt="" class="flex-container__img">
@@ -143,7 +120,7 @@
 		<div class="container">
 			<div class="container__title">
 				<hr>
-				<h3>trending products</h3>
+				<h3 id="trends">trending products</h3>
 			</div>
 			<div class="flex-container">
 				<img src="img/trends.png" alt="" class="third-content__img">
@@ -244,7 +221,7 @@
 		<div class="container">
 			<div class="container__title">
 				<hr>
-				<h3>team of professionals</h3>
+				<h3 id="team">team of professionals</h3>
 			</div>
 			<div class="flex-container">
 				<div class="forth-content">
@@ -275,7 +252,7 @@
 		<div class="container">
 			<div class="container__title">
 				<hr>
-				<h3>contacts</h3>
+				<h3 id="contacts">contacts</h3>
 			</div>
 			<div class="flex-container">
 			<div class="footer">

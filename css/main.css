@@ -8,6 +8,11 @@ body {
   transition: ease 0.3s;
 }
 
+section {
+  height: 100%;
+  width: 100%;
+}
+
 .header {
   margin: 100px auto 0;
   position: absolute;
@@ -16,8 +21,8 @@ body {
 }
 
 .container {
+  margin: 0 auto;
 	max-width: 1200px;
-	margin: 0 auto;
 }
 
 .header__content {
@@ -25,7 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
 	height: 67px;
-  margin:0 10%;
+  margin: 0 10%;
   width: 80%;
 }
 
@@ -39,69 +44,66 @@ body {
   width: 100%;
 }
 
-.header__logo{
+.header__logo {
 	width: 170px;
 }
 
-.header__navigation{
+.header__navigation {
   display: flex;
   justify-content: flex-end;
 }
 
-.header__menu{
+.header__menu {
 	margin: 0;
 	padding: 0;
 }
 
-.header__item{
+.header__item {
   float: left;
   list-style-type: none;
 	text-transform: uppercase;
 }
 
 .header__link-item {
-	text-decoration: none;
 	color:  black;
   display: block;
   padding: 21px 20px 22px;
+	text-decoration: none;
 }
 
-.header__link-item:hover{
+.header__link-item:hover {
   background: #6c6e7c;
   border-radius: 0 0 5px 5px;
   color: white;
   padding-top: 40px;
 }
 
-.menu__button {
+.header__burger-menu {
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-.burger-menu {
-  display: none;
-}
-
-
-section {
-  width: 100%;
-  height: 100%; 
-}
-
 
 .swiper-wrapper{
 	position: relative;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 50px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -119,7 +121,6 @@ hr {
   margin-top: 70px;
   opacity: 0.5;
 }
-
 
 h3 {
   background-color:#fff;
@@ -190,7 +191,7 @@ h3 {
   position: relative;
   overflow: hidden;
 }
-
+.nav
 
 .second-preview:before{
   width: 100%;
@@ -781,7 +782,7 @@ h2 {
   border: 0.1vw solid #a78247;
   border-color: #a78247 transparent transparent transparent;
 }
-
+.close
 
 .wrapper .icon.icon12 .line.line5 {
   top: 80%;
@@ -1396,7 +1397,34 @@ footer h3 {
     display: none;
   }
 
+  .header__menu-open {
+    display: block;
+    left: -250px;
+    position: absolute;
+  }
 
+  .header__item {
+    float: none;
+  }
+
+  .header__link-item:hover {
+    border-radius: 0 5px 5px 0;
+    padding: 21px 20px 22px 100px;
+  }
+
+  .header__burger-menu {
+    cursor: pointer;
+    display: block;
+    height: 46px;
+    left: 10px;
+    position: fixed;
+    top: 10px;
+    width: 54px;
+  }
+
+  .show_menu {
+    transform: translateX(250px);
+  }
 
 
 
@@ -1716,14 +1744,14 @@ footer h3 {
   }
 
 
-  body.nav_is_visible {
+  /* body.nav_is_visible {
     transform: translateX(300px);
   }
 
 
   body.nav_is_visible .burger-menu {
     transform: translateX(-100%);
-  }
+  } */
 }
 
 
@@ -1737,7 +1765,28 @@ footer h3 {
     width: 127px;
   }
 
+  .header__menu-open {
+    left: -150px;
+  }
 
+  .header__link-item {
+    text-align: center;
+    width: 110px;
+  }
+
+  .header__link-item:hover {
+    border-radius: 0;
+    padding: 21px 20px 22px;
+  }
+
+  .show_menu {
+    transform: translateX(150px);
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 40px 20px;
+  }
 
 
   .logo_footer {
