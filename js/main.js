@@ -14,16 +14,36 @@ $(function(){
     keyboard: true,
   });
 
-  $('.menu__button').on("click", function() {
-    if($('body').hasClass('nav_is_visible')){
-      $('body').removeClass('nav_is_visible');
-      $('.menu__button').removeClass('close');
+  $('.header__burger-menu').on("click", function() {
+    if ($('.header__menu').hasClass('header__menu-open')) {
+      $('body').removeClass('show_menu');
+      $('.header__burger-menu').attr('src', 'img/menu.png');
+      $('.header__menu').removeClass('header__menu-open');
+      document.documentElement.style.overflow = "";
     } else {
-      $('body').addClass('nav_is_visible');
-      $('.menu__button').addClass('close');
+      $('body').addClass('show_menu');
+      $('.header__burger-menu').attr('src', 'img/close.png');
+      $('.header__menu').addClass('header__menu-open');
+      document.documentElement.scrollTop = 0;
+      document.documentElement.style.overflow = "hidden";
     };
   });
-  $('body').addClass('item_is_visible');
+
+  $(".header__link-item").on("click", function(event) {
+    let anchor = $(this);
+    $('html, body').stop().animate({scrollTop: $(anchor.attr('href')).offset().top - 30 + "px"}, 777);
+
+    if ($('.header__menu').hasClass('header__menu-open')) {
+      $('body').removeClass('show_menu');
+      $('.header__burger-menu').attr('src', 'img/menu.png');
+      $('.header__menu').removeClass('header__menu-open');
+      document.documentElement.style.overflow = "";
+    }
+
+    event.preventDefault();
+    return false;
+  });
+  // $('body').addClass('item_is_visible');
     
   // function removeClasses() {
   //   $(".burger-menu ul li").each(function() {
@@ -32,14 +52,14 @@ $(function(){
   //   });
   // }
       
-  $('.burger-menu a').on('click',function(e){
-    e.preventDefault();
-    // removeClasses();
-    var custom_class = $(this).data('class');
-    $('body').addClass(custom_class);
-  });
+  // $('.burger-menu a').on('click',function(e){
+  //   e.preventDefault();
+  //   // removeClasses();
+  //   var custom_class = $(this).data('class');
+  //   $('body').addClass(custom_class);
+  // });
 
-  window.addEventListener("scroll", function(event){
+  window.addEventListener("scroll", function(){
     if(document.documentElement.clientWidth >= 845) {
       if (document.documentElement.scrollTop > 100) {
         let stickyElement = $(".header__content");
