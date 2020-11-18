@@ -12,6 +12,7 @@ section {
 .container {
   margin: 0 auto;
   max-width: 1200px;
+  position: relative;
 }
 
 .container__title {
@@ -169,6 +170,83 @@ section {
   z-index: 5;
 }
 
+.trends__image-container {
+  height: 740px;
+  overflow: hidden;
+  width: 50%;
+}
+
+.trends__side-image {
+  height: 100%;
+}
+
+.trends__container {
+  background-color: #ffffff;
+  height: 740px;
+  position: absolute;
+  right: 0;
+  width: 600px;
+}
+
+.trends__content {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  padding: 0 0 10px;
+  text-align: center;
+  width: 50%;
+}
+
+.trends__content-block {
+  height: 280px;
+  margin-bottom: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.trends__content-image {
+  height: 160px;
+  margin: 60px 10%;
+  width: 80%;
+}
+
+.trends__hover-link {
+  font-size: 50px;
+  height: 280px;
+  color: #ffffff;
+  line-height: 275px;
+  margin: 0 5%;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  transition-duration: 0.3s;
+  width: 90%;
+}
+
+.trends__hover-link:hover {
+  opacity: 1;
+  background-color: #6c6e7c9d;
+}
+
+.trends__link {
+  height: 40px;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+}
+
+.trends__link:hover {
+  color: #6c6e7c;
+  letter-spacing: 3px;
+}
+
+.trends__price {
+  color: #6c6e7c;
+  margin-top: 0;
+}
+
+.trends__del-price {
+  color: #a5a7b4;
+}
 
 
 
@@ -1238,32 +1316,8 @@ footer h3 {
 .footer p {
   color: rgb(155, 155, 155);
 }
+ 
 
-
-@media screen and (max-width: 1215px) {
- .flex-container__img {
-    margin-left: 66.7%;;
-  }
-  
-
-  .third-content-box a {
-    width: 23%;
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-
-  .text {
-    margin-top: 30%;
-  }
-
-
-  .third-content img {
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
 
 
 @media screen and (max-width: 1096px) {
@@ -1271,7 +1325,7 @@ footer h3 {
     padding-top: 41%;
     width: 33.2%;
   }
-}
+} 
 
   
 @media screen and (max-width: 1015px) {
@@ -1677,9 +1731,12 @@ footer h3 {
 
 @media screen and (max-width: 680px) {
 
+  .header__content {
+    height: 50px;
+  }
+
   .header__logo {
     height: 50px;
-    margin-top: 8px;
     width: 127px;
   }
 
@@ -1697,6 +1754,11 @@ footer h3 {
     padding: 21px 20px 22px;
   }
 
+  .header__burger-menu {
+    left: 5px;
+    top: 2px;
+  }
+
   .show_menu {
     transform: translateX(150px);
   }
@@ -1705,7 +1767,7 @@ footer h3 {
     margin: 0;
     width: 100%;
   }
-  
+
   .swiper-button-next,
   .swiper-button-prev {
     padding: 40px 20px;
