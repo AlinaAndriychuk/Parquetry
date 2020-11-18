@@ -22,10 +22,11 @@ section {
 }
 
 .container__line {
+  background-color: #a5a7b457;
   box-sizing: border-box;
   display: block;
   float: left;
-  margin: 70px 0 0;
+  margin: 72px 0 0;
   opacity: 0.5;
   width: 100%;
 }
@@ -34,7 +35,7 @@ section {
   background-color:#ffffff;
   float: left;
   display: inline;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   left: 0;
   margin: 60px auto 0;
@@ -248,13 +249,46 @@ section {
   color: #a5a7b4;
 }
 
+.trends__icon {
+  border: 5px #a5a7b457 double;
+  margin-top: 60px;
+  width: 320px;
+}
+
+.trends__icon-image {
+  float: left;
+}
+
+.trends__icon-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 25px auto 5px;
+  text-transform: uppercase;
+}
+
+.trends__icon-text {
+  color: #6c6e7c;
+  margin-top: 0;
+}
 
 
 
 
 
 
-h2 {
+
+
+
+
+
+
+
+
+
+
+
+
+/* h2 {
   font-size: 24px;
   text-transform: uppercase;
   width: 200px;
@@ -262,7 +296,7 @@ h2 {
   margin: 0;
   margin-left: 15px;
   padding: 3px 10px 10px 10px;
-}
+} */
 
 
 .third-content a p:hover{
@@ -1445,7 +1479,20 @@ footer h3 {
     display: none;
   }
 
-  
+  .trends__icon {
+    height: 100px;
+    margin: 15px auto 45px;
+    width: 450px;
+  }
+
+  .trends__icon-title {
+    font-size: 24px;
+    margin: 18px auto 0;
+  }
+
+  .trends__icon-text {
+    font-size: 18px;
+  }
 
 
 
@@ -1850,7 +1897,19 @@ footer h3 {
     width: 98%;
   }
 
+  .trends__icon {
+    max-width: 320px;
+    width: 100%;
+  }
 
+  .trends__icon-title {
+    font-size: 16px;
+    margin: 25px auto 5px;
+  }
+
+  .trends__icon-text {
+    font-size: 16px;
+  }
 
 
 
@@ -1999,7 +2058,38 @@ footer h3 {
 
 
 
-@media screen and (min-width: 40em) {
+@media screen and (max-width: 350px) {
+
+  .trends__icon {
+    width: 250px;
+  }
+
+  .trends__icon-image {
+  }
+
+  .trends__icon-title {
+    line-height: 18px;
+    margin: 10px auto 10px;
+  }
+
+  .trends__icon-text {
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .form .field.half {
     width: calc(50% - 2em);
     margin-right: 2em;
