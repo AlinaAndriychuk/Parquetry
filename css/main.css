@@ -1385,6 +1385,10 @@ footer h3 {
     width: 100%;
   }
 
+  .offers {
+    height: 1135px;
+  }
+
   .offers__content, 
   .flex-container .offers__content--double {
     float: left;
@@ -1410,6 +1414,34 @@ footer h3 {
     padding-left: 40px;
     opacity: 1;
   }
+
+  .trends__container {
+    height: 600px;
+    position: relative;
+    width: 100%;
+  }
+
+  .trends__content-block {
+    height: 220px;
+  }
+
+  .trends__content-image {
+    margin-top: 0;
+  }
+
+  .trends__hover-link {
+    display: none;
+  }
+
+  .trends__link:hover {
+    letter-spacing: normal;
+  }
+
+  .trends__image-container {
+    display: none;
+  }
+
+  
 
 
 
