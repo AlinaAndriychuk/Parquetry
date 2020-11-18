@@ -1421,12 +1421,16 @@ footer h3 {
     width: 100%;
   }
 
+  .trends__content {
+    margin-bottom: 60px;
+  }
+
   .trends__content-block {
-    height: 220px;
+    height: 160px;
   }
 
   .trends__content-image {
-    margin-top: 0;
+    margin: 0 33px;
   }
 
   .trends__hover-link {
@@ -1805,11 +1809,15 @@ footer h3 {
     padding: 40px 20px;
   }
 
+  .offers {
+    height: auto;
+  }
+
   .offers__content, 
   .flex-container .offers__content--double {
     float: none;
     margin: 0 auto 50px;
-    max-width: 350px;
+    max-width: 500px;
     width: 100%;
   }
 
@@ -1817,8 +1825,30 @@ footer h3 {
     height: 600px;
   }
 
+  .offers__content--double .offers__content-image {
+    margin-left: -380px;
+  }
 
+  .offers .flex-container:last-child .offers__content:last-child {
+    margin-bottom: 0;
+  }
 
+  .trends__container {
+    height: auto;
+  }
+
+  .trends__content {
+    margin: 0 auto 60px;
+    float: none;
+    max-width: 330px;
+    width: 90%;
+  }
+
+  .trends__content-image {
+    margin: 0 1%;
+    max-width: 264px;
+    width: 98%;
+  }
 
 
 
