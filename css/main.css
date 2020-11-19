@@ -329,10 +329,14 @@ section {
 
 .footer {
   background-color: #888a99;
+  padding-bottom: 40px;
+}
+
+.footer .flex-container {
+  justify-content: space-around;
 }
 
 .contacts {
-  margin: 0 0 40px 20px;
   width: 420px;
 }
 
@@ -363,11 +367,50 @@ section {
   text-decoration: none;
 }
 
+.form {
+  background-clip: padding-box;
+  background-color: #6c6e7c;
+  border: 5px double #363B43;
+  color: #ffffff;
+  padding: 20px;
+  width: 400px;
+}
 
+.form__label {
+  display: block;
+  padding: 25px 0 5px;
+}
 
+.form__label:first-child {
+  padding-top: 0;
+}
 
+.form__input {
+  box-sizing: border-box;
+  width: 250px;
+}
 
+.form__textarea {
+  box-sizing: border-box;
+  height: 100px;
+  resize: none;
+  width: 100%;
+}
 
+.form__button {
+  background-color: #FFEDED;
+  cursor: pointer;
+  height: 40px;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+  width: 250px;
+}
+
+.form__button:hover {
+  background-color: #c0a4a1;
+}
 
 
 /* 
