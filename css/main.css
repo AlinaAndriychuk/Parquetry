@@ -1639,9 +1639,17 @@ footer h3 {
     bottom: 0;
   }
 
+  .contacts {
+    margin: 0 auto 40px;
+  }
 
+  .contacts__content {
+    padding-left: 50px;
+  }
 
-
+  .form {
+    margin: auto;
+  }
 
 
 
@@ -2063,7 +2071,14 @@ footer h3 {
     font-size: 16px;
   }
 
-
+  .contacts, .form {
+    box-sizing: border-box;
+    max-width: 320px;
+    width: 100%;
+  }
+  .contacts__content {
+    padding-left: 0;
+  }
 
 
 
