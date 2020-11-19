@@ -271,7 +271,15 @@ section {
   margin-top: 0;
 }
 
+.team__block {
+  height: 491px;
+  width: 333px;
+}
 
+.team__image {
+  height: 100%;
+  width: 100%;
+}
 
 
 
@@ -2062,9 +2070,6 @@ footer h3 {
 
   .trends__icon {
     width: 250px;
-  }
-
-  .trends__icon-image {
   }
 
   .trends__icon-title {
