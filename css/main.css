@@ -2071,13 +2071,19 @@ footer h3 {
     font-size: 16px;
   }
 
-  .contacts, .form {
+  .contacts, 
+  .form {
     box-sizing: border-box;
     max-width: 320px;
     width: 100%;
   }
   .contacts__content {
     padding-left: 0;
+  }
+
+  .form__input, 
+  .form__button {
+    width: 100%;
   }
 
 
