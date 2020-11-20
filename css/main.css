@@ -2256,7 +2256,18 @@ footer h3 {
     margin-bottom: 6px;
   }
 
+  .contacts__content {
+    height: 60px;
+  }
 
+  .contacts__text {
+    padding: 0 5px;
+  }
+
+  .contacts__link {
+    line-height: 60px;
+    margin: 0;
+  }
 
 
 
