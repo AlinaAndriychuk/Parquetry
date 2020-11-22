@@ -1,4 +1,4 @@
-# FlooringStore
+# Prquetry
 
 Home page 
 [Link](https://alinaandriychuk.github.io/FlooringStore/)
