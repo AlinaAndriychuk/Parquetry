@@ -1,11 +1,15 @@
 "use-strict";
- 
-$(function() {
+
+$(window).on('load', function() {
   $('.preloader').css('display', 'none');
   $('body').css({
     'overflow': 'visible',
     'padding-right': 0,
   });
+});
+ 
+$(function() {
+  
   let swiper = new Swiper('.swiper-container', {
     cssMode: true,
     navigation: {
