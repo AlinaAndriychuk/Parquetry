@@ -1,6 +1,11 @@
 "use-strict";
  
 $(function() {
+  $('.preloader').css('display', 'none');
+  $('body').css({
+    'overflow': 'visible',
+    'padding-right': 0,
+  });
   let swiper = new Swiper('.swiper-container', {
     cssMode: true,
     navigation: {

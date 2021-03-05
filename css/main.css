@@ -1,12 +1,50 @@
 body {
   font-family: 'Kanit', sans-serif;
 	margin: 0 auto;
-	padding: 0 auto;
+	padding: 0 16px 0 0;
+  overflow: hidden;
 }
 
 section {
   height: 100%;
   width: 100%;
+}
+
+.preloader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 70px;
+  width: 70px;
+  background-color: #363B43;
+  animation: rotate 4s infinite linear alternate;
+}
+
+.loader__rect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 60px;
+  width: 60px;
+  background-color: #ffffff;
+  animation: rotate 4s infinite linear alternate;
+}
+
+@keyframes rotate{
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg) scale(0)
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg) scale(1)
+  }
 }
 
 .container {
